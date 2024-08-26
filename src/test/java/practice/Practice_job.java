@@ -91,5 +91,12 @@ public class Practice_job {
 	 
 		driver.quit();
 	}
-
+	@Then("i enter {string} and i enter {string} and i enter {string}")
+	public void i_enter_and_i_enter_and_i_enter(String jobtitle, String jobdesc, String jobnote) {
+		
+		driver.findElement(By.xpath("//input[@id='jobTitle_jobTitle']")).sendKeys(jobtitle);
+		driver.findElement(By.xpath("//textarea[@id='jobTitle_jobDescription']")).sendKeys(jobdesc);
+		driver.findElement(By.xpath("//textarea[@id='jobTitle_note']")).sendKeys(jobnote);
+	}
+	    
 }
