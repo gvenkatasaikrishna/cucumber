@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
 //@RunWith(Cucumber.class)
-@CucumberOptions(dryRun = false,features = {"./Feature/practice.feature"},glue = {"practice"},plugin= {"html:target/cucumber-reports"},monochrome = true )
+@CucumberOptions(dryRun = false,features = {"./Feature/practice1.feature"},glue = {"practice1"},plugin= {"html:target/cucumber-reports"},monochrome = true )
 public class Runner extends AbstractTestNGCucumberTests {
 
 }
